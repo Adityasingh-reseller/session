@@ -40,9 +40,9 @@ async def start(event):
                 InlineKeyboardButton("❓ Questions", callback_data="whatis"),
                 InlineKeyboardButton("©️ Copyright", url="https://t.me/legendxdev"),
             ],
-                home_buttons = [generate_single_button],
+                home_buttons = [generate_single_button
                [InlineKeyboardButton(text="🔙 BACK", callback_data="back")],
-            ]
+            ],
                 generate_button = [generate_single_button]
             [
                 InlineKeyboardButton("⚙️ Repo", url="https://github.com/FireProjects/SessionStringBot"),
