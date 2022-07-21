@@ -1,48 +1,56 @@
 {
-    "name": "Session Hack Bot",
-    "description": "A Session String Hacking Bot!",
-    "logo": "https://telegra.ph/file/73cdc4812f4fcbf8609ad.jpg",
-    "keywords": [
-        "TELETHON",
-        "SessionHackBot",
-        "Telegram Bot",
-        "Session",
-        "LEGENDX22"
-    ],
-    "website": "",
-    "success_url": "https://telegram.dog/FireProjects",
-    "env": {
-        "BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
-            "required": true,
-            "value": ""
-        },
-        "MUST_JOIN": {
-            "description": "Add username/id of a channel/group",
-            "required": false,
-            "value": "https://t.me/FireProjects"
-        }
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "required": true,
-            "value": ""
-        },
-        "API_ID": {
-            "description": "Your API ID from my.telegram.org",
-            "required": true,
-            "value": ""
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+  "name": "Pyrogram And Telethon String Session Generator",
+  "description": "Generate Pyrogram And Telethon String Session Easley",
+  "logo": "https://telegra.ph/file/27bfcfbb9d72fb3f3a1ca.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
     }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/jankarikiduniya/Session_Robot",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "Don't change ANYTHING.",
+      "required": true,
+      "value": "ANYTHING"
+    },
+    "API_ID": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true,
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Obtain a Telegram bot token by contacting @BotFather",
+      "required": true,
+      "value": ""
+    },
+    "MUST_JOIN": {
+      "description": "Add username/id of a channel/group",
+      "required": false,
+      "value": "https://t.me/Alexa_Help"
+    }
+  }
 }
