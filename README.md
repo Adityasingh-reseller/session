@@ -1,2 +1,2 @@
 # session
-heruko.com/?deploy 
+https://heruko.com/?deploy 
