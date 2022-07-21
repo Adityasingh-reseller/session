@@ -1,1 +1,4 @@
 telethon
+pyrogram==1.4.12
+SQLAlchemy==1.4.37
+python-dotenv
